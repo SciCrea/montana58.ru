@@ -1,0 +1,85 @@
+.uk-logo,
+.uk-logo:focus,
+.uk-logo:hover,
+.uk-navbar-nav>li>a,
+.uk-close {
+    color: var(--ColorWhite);
+}
+
+.uk-navbar-nav>li:focus>a,
+.uk-navbar-nav>li>a:focus,
+.uk-navbar-nav>li:hover>a,
+.uk-navbar-nav>li.uk-active>a,
+.uk-navbar-toggle {
+    color: var(--PrimaryColor);
+}
+
+#Terrace .uk-navbar-nav > li:hover > a,
+#Terrace .uk-navbar-nav>li.uk-active>a,
+#Terrace .uk-navbar-toggle {
+    color: var(--PrimaryColor2);
+}
+
+.uk-navbar-nav>li>a {
+    border-bottom: 3px solid transparent;
+}
+
+.uk-navbar-nav>li.uk-active>a {
+    border-bottom: 3px solid var(--PrimaryColor);
+}
+
+#Terrace .uk-navbar-nav>li.uk-active>a {
+    border-bottom: 3px solid var(--PrimaryColor2);
+}
+
+.uk-navbar-nav>li>a {
+    font-size: 1.25rem;
+}
+
+.glow {
+    margin-bottom: 0;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #9554b3, 0 0 20px #1F2022, 0 0 30px #1F2022, 0 0 40px #1F2022, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+
+    to {
+        text-shadow: 0 0 20px #9554b3, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.uk-subnav>*> :first-child {
+    color: #1F2022;
+    font-size: 0.75rem;
+}
+
+.uk-subnav>*>a:focus,
+.uk-subnav>*>a:hover {
+    color: black;
+}
+
+.uk-close {
+    color: var(--PrimaryColor);
+}
+
+#Terrace .uk-close {
+    color: var(--PrimaryColor2);
+}
+
+.uk-close:hover {
+    color: white;
+}
+
+.uk-dotnav>.uk-active>* {
+    background-color: var(--PrimaryColor);
+}
+
+.uk-dotnav > * > :hover {
+    background-color: rgba(250, 44, 205, 0.5);
+  }

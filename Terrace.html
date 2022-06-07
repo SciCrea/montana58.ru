@@ -11,9 +11,6 @@
     <link href="assets/css/styles.css" rel="stylesheet">
     <!-- <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script> -->
     <!-- <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
-
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon.png">
-
     <style>
         .preloader {
             position: fixed;
@@ -27,17 +24,17 @@
             backdrop-filter: grayscale(1) contrast(3) blur(1px);
             z-index: 1001;
         }
-
+    
         .loaded_hiding .preloader {
             transition: 0.3s opacity;
             opacity: 0;
         }
-
+    
         .loaded .preloader {
             display: none;
         }
     </style>
-
+    
     <script>
         window.onload = function () {
             document.body.classList.add('loaded_hiding');
@@ -47,6 +44,9 @@
             }, 500);
         }
     </script>
+
+
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon.png">
 
     <!-- Google Tag Manager -->
     <script>
@@ -68,7 +68,7 @@
     <!-- End Google Tag Manager -->
 </head>
 
-<body>
+<body id="Terrace">
 
     <div class="preloader">
         <div class="uk-position-center">
@@ -87,16 +87,15 @@
                 <div class="uk-container">
                     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                         <div class="uk-navbar-left">
-                            <span class="uk-text-uppercase uk-visible@s"><a class="uk-navbar-item uk-logo"
+                            <span class="uk-text-uppercase"><a class="uk-navbar-item uk-logo uk-logo-a"
                                     href="/">Disco-bar</a></span>
                             <span><a class="uk-navbar-item uk-logo uk-visible@s">|</a></span>
-                            <span class="uk-text-uppercase"><a class="uk-navbar-item uk-logo uk-logo-a"
+                            <span class="uk-text-uppercase uk-visible@s"><a class="uk-navbar-item uk-logo"
                                     href="/Terrace.html">Terrace</a></span>
                         </div>
                         <div class="uk-navbar-right uk-visible@s">
                             <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
                                 <li hidden><a href="#Home"></a></li>
-                                <li><a href="#Afisha">Афиша</a></li>
                                 <li><a href="#Akcii">Акции</a></li>
                                 <li><a href="#Menu">Меню</a></li>
                                 <li><a href="#Map">Контакты</a></li>
@@ -109,7 +108,6 @@
 
                                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                                     <li hidden><a href="#Home"></a></li>
-                                    <li><a href="#Afisha">Афиша</a></li>
                                     <li><a href="#Akcii">Акции</a></li>
                                     <li><a href="#Menu">Меню</a></li>
                                     <li><a href="#Map">Контакты</a></li>
@@ -122,11 +120,11 @@
             </div>
         </div>
         <div class="HomeHeader uk-background-cover uk-background-top-center"
-            style="background-image: url(assets/images/1584809501-2.webp);">
+            style="background-image: url(assets/images/zelenye-listia-kapli-vody-krupnyi-plan.jpg);">
             <div class="uk-container">
-                <div class="HomeHeader-Text uk-flex-center" uk-grid>
+                <div class="HomeHeader-Text2 uk-flex-center" uk-grid>
                     <div class="uk-width-auto uk-text-center">
-                        <h1>MONTANA <br><small class="glow">disco bar</small></h1>
+                        <h1>terrace <br><small class="uk-text-uppercase">Montana</small></h1>
                     </div>
                 </div>
                 <div class="uk-flex-center uk-margin-large-top" uk-grid>
@@ -141,59 +139,30 @@
             <div id="Afisha"></div>
         </div>
     </div>
-    <section class="HeaderAfisha">
-        <div class="uk-container uk-margin-xlarge-bottom">
-            <div class="uk-child-width-1-1 uk-child-width-1-3@s uk-flex-center" uk-grid
-                uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300">
-                <div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top">
-                            <a href="#AfishaItem1" uk-toggle><img src="web/afisha/IMG_20220606_132529_140.webp"
-                                    alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top">
-                            <a href="#AfishaItem2" uk-toggle><img src="web/afisha/IMG_20220606_132532_423.webp"
-                                    alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top">
-                            <a href="#AfishaItem3" uk-toggle><img
-                                    src="web/afisha/946E4186-615F-4EB1-8183-5C2C2B5AAF44.webp" alt=""></a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <div id="AfishaItem1" class="uk-flex-top" uk-modal>
-        <div class="AfishaModal uk-modal-dialog uk-modal-body uk-padding-remove uk-margin-auto-vertical">
-            <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
-            <img src="web/afisha/IMG_20220606_132529_140.webp" alt="">
-        </div>
-    </div>
-    <div id="AfishaItem2" class="uk-flex-top" uk-modal>
-        <div class="AfishaModal uk-modal-dialog uk-modal-body uk-padding-remove uk-margin-auto-vertical">
-            <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
-            <img src="web/afisha/IMG_20220606_132532_423.webp" alt="">
-        </div>
-    </div>
     <section id="Akcii" class="HomeAkcii uk-section-xlarge">
         <div class="uk-container uk-container-xlarge">
             <h2 class="uk-text-uppercase uk-text-center" style="color: white; font-size: 4rem;">Акции</h2>
-            <div class="uk-child-width-1-1@s uk-child-width-1-4@l uk-grid-large uk-flex-center" uk-grid
-                uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 200; repeat: true">
+            <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-large uk-flex-center"
+                uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 200; repeat: true">
                 <div>
                     <a href="#AkciiItem1" uk-toggle><img src="web/akcii/IMG_20220606_132518_339.webp" alt=""></a>
                 </div>
                 <div>
-                    <a href="#AkciiItem2" uk-toggle><img src="web/akcii/IMG_6205_gm.webp" alt=""></a>
+                    <a href="#AkciiItem2" uk-toggle><img src="web/akcii/terrace/beloe-vino.webp" alt=""></a>
+                </div>
+                <div>
+                    <a href="#AkciiItem3" uk-toggle><img src="web/akcii/terrace/img_20220525_134607_338.webp"
+                            alt=""></a>
+                </div>
+                <div>
+                    <a href="#AkciiItem4" uk-toggle><img src="web/akcii/terrace/img_20220525_134616_047.webp"
+                            alt=""></a>
+                </div>
+                <div>
+                    <a href="#AkciiItem5" uk-toggle><img src="web/akcii/terrace/rebenku-morozhennoe.webp" alt=""></a>
+                </div>
+                <div>
+                    <a href="#AkciiItem6" uk-toggle><img src="web/akcii/terrace/skidka-na-bar.webp" alt=""></a>
                 </div>
             </div>
         </div>
@@ -207,181 +176,48 @@
     <div id="AkciiItem2" class="uk-flex-top" uk-modal>
         <div class="AkciiModal uk-modal-dialog uk-modal-body uk-padding-remove uk-margin-auto-vertical">
             <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
-            <img src="web/akcii/IMG_6205.webp" alt="">
+            <img src="web/akcii/terrace/beloe-vino.webp" alt="">
         </div>
     </div>
-    <section class="HomeInfo uk-section-large">
-        <div class="uk-container">
-            <div class="uk-child-width-1-2@s uk-child-width-1-3@l uk-flex-center" uk-grid
-                uk-height-match="target: > div > .uk-card">
-                <div>
-                    <div class="HomeInfoCard1 uk-card uk-card-default uk-card-large uk-card-body uk-text-center">
-                        <h3 class="uk-card-title" uk-parallax="opacity: 0,1; y: -100,0; viewport: 0.5;">
-                            <span>Шоу-программа</span>
-                        </h3>
-                        <p uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5;"><span>Мы будем радовать
-                                вас громкими кавер-группами, популярными ведущими, и лучшими звездами города</span></p>
-                    </div>
-                </div>
-                <div>
-                    <div class="HomeInfoCard2 uk-card uk-card-default uk-card-large uk-card-body uk-text-center">
-                        <h3 class="uk-card-title" uk-parallax="opacity: 0,1; y: -100,0; viewport: 0.5;">
-                            <span>Музыка с нотками 90х</span>
-                        </h3>
-                        <p uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5;"><span>Современная музыка с
-                                нотками 90х порадует абсолютно всех гостей</span></p>
-                    </div>
-                </div>
-                <!-- <div>
-                    <div class="HomeInfoCard3 uk-card uk-card-default uk-card-large uk-card-body uk-text-center">
-                        <h3 class="uk-card-title" uk-parallax="opacity: 0,1; y: -100,0; viewport: 0.5;">
-                            <span>Лимузин для гостей</span>
-                        </h3>
-                        <p uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5;"><span>Оставляй депозит в
-                                размере 10 т.р. и в день открытия, мы довезем тебя до Монтаны на
-                                лимузине</span></p>
-                    </div>
-                </div> -->
-            </div>
+    <div id="AkciiItem3" class="uk-flex-top" uk-modal>
+        <div class="AkciiModal uk-modal-dialog uk-modal-body uk-padding-remove uk-margin-auto-vertical">
+            <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
+            <img src="web/akcii/terrace/img_20220525_134607_338.webp" alt="">
         </div>
-    </section>
-    <section class="HomePhoto uk-section-large">
-        <div class="uk-container uk-container-xlarge">
-            <h2 class="uk-text-uppercase uk-text-center" style="color: white; font-size: 4rem;">Галерея</h2>
-            <div uk-slider>
-                <div class="uk-slider-items uk-child-width-1-5@s uk-grid-collapse" uk-grid
-                    uk-lightbox="animation: fade">
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/mcSb99Dh79k.jpg">
-                            <img src="web/photo/2021/mcSb99Dh79k.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/OFLrTfhSeQ.jpg">
-                            <img src="web/photo/2021/OFLrTfhSeQ.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/7ty76kkXdSc.jpg">
-                            <img src="web/photo/2021/7ty76kkXdSc.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/4DYDBLH2Y84.jpg">
-                            <img src="web/photo/2021/4DYDBLH2Y84.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/pI5UyKL5hRA.jpg">
-                            <img src="web/photo/2021/pI5UyKL5hRA.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/ACn3-2etFuc.jpg">
-                            <img src="web/photo/2021/ACn3-2etFuc.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/xZysB2Gpo_Q.jpg">
-                            <img src="web/photo/2021/xZysB2Gpo_Q.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/drLs-18Hqh4.jpg">
-                            <img src="web/photo/2021/drLs-18Hqh4.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/YmTwLi4rQS0.jpg">
-                            <img src="web/photo/2021/YmTwLi4rQS0.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/tg0pHJ43ae0.jpg">
-                            <img src="web/photo/2021/tg0pHJ43ae0.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/sslzyygTKNc.jpg">
-                            <img src="web/photo/2021/sslzyygTKNc.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/K2b_WyPtLWM.jpg">
-                            <img src="web/photo/2021/K2b_WyPtLWM.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/hoQfcm15aT0.jpg">
-                            <img src="web/photo/2021/hoQfcm15aT0.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/cA4IlVcVMG4.jpg">
-                            <img src="web/photo/2021/cA4IlVcVMG4.jpg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a class="uk-inline" href="web/photo/2021/5SLi7eZMGdY.jpg">
-                            <img src="web/photo/2021/5SLi7eZMGdY.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-            </div>
+    </div>
+    <div id="AkciiItem4" class="uk-flex-top" uk-modal>
+        <div class="AkciiModal uk-modal-dialog uk-modal-body uk-padding-remove uk-margin-auto-vertical">
+            <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
+            <img src="web/akcii/terrace/img_20220525_134616_047.webp" alt="">
         </div>
-    </section>
+    </div>
+    <div id="AkciiItem5" class="uk-flex-top" uk-modal>
+        <div class="AkciiModal uk-modal-dialog uk-modal-body uk-padding-remove uk-margin-auto-vertical">
+            <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
+            <img src="web/akcii/terrace/rebenku-morozhennoe.webp" alt="">
+        </div>
+    </div>
+    <div id="AkciiItem6" class="uk-flex-top" uk-modal>
+        <div class="AkciiModal uk-modal-dialog uk-modal-body uk-padding-remove uk-margin-auto-vertical">
+            <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
+            <img src="web/akcii/terrace/skidka-na-bar.webp" alt="">
+        </div>
+    </div>
     <section id="Menu" class="Menu uk-section">
         <div class="uk-container">
             <h2 class="uk-text-uppercase uk-text-center" style="color: black; font-size: 4rem;">Меню</h2>
             <div class="uk-flex uk-flex-center uk-flex-middle" uk-grid uk-lightbox="animation: fade">
                 <div class="uk-width-1-1 uk-width-expand@s">
-                    <a class="uk-inline" href="web/menu/osnmenu.jpg">
-                        <img src="web/menu/osnmenu_gaus.jpg" alt="">
+                    <a class="uk-inline" href="web/menu/terrace/BiznesLanch_montana.webp">
+                        <img src="web/menu/terrace/BiznesLanch_montana.webp" alt="">
                     </a>
                 </div>
-                <div hidden>
-                    <a href="web/menu/menyu_alko_izyum (1).jpg"></a>
-                </div>
-                <div hidden>
-                    <a href="web/menu/menyu_KOKTEL_NOE_izyum.jpg"></a>
-                </div>
-                <div hidden>
-                    <a href="web/menu/menyu_KOKTEL_NOE_izyum1.jpg"></a>
-                </div>
-                <div hidden>
-                    <a href="web/menu/1623766525.jpg"></a>
-                </div>
-                <div hidden>
-                    <a href="web/menu/IMG_20210805_130322_708.jpg"></a>
-                </div>
-                <div class="uk-width-1-1 uk-width-1-4@s">
-                    <a class="uk-inline" href="web/menu/limonady_izyum_17v.jpg">
-                        <img src="web/menu/limonady_izyum_17v.jpg" alt="">
-                    </a>
-                </div>
-                <div class="uk-width-1-1 uk-width-1-4@s">
-                    <a class="uk-inline" href="web/menu/IMG_20210805_130504_837.jpg">
-                        <img src="web/menu/IMG_20210805_130504_837.jpg" alt="">
+                <div class="uk-width-1-1 uk-width-expand@s">
+                    <a class="uk-inline" href="web/menu/terrace/Menyu_Montana_s_logo.webp">
+                        <img src="web/menu/terrace/Menyu_Montana_s_logo.webp" alt="">
                     </a>
                 </div>
             </div>
-    </section>
-    <section class="PredFooterInfo uk-section-xlarge">
-        <div class="uk-container">
-            <div class="uk-flex-center" uk-grid
-                uk-scrollspy="cls: uk-animation-slide-top; target: > div; delay: 300; repeat: true">
-                <div class="uk-width-1-1@s uk-width-1-2@m uk-text-center">
-                    <div class="PredFooterInfoCard uk-padding uk-background-default uk-box-shadow-xlarge">
-                        <h2 class="uk-text-uppercase uk-text-center" style="font-size: 2rem;">Диско-бар Montana</h2>
-                        <p>Монтана — это новое заведение, со своей идеей. Мы будем делать самые громкие вечеринки, с
-                            самыми шумными и яркими артистами. Лимузин довезет тебя до Монтаны. Наш бар утолит твою
-                            жажду, а кухня всегда накормит. Современная музыка, с легкими нотками 90, атмосфера легкости
-                            и уюта полностью расслабит тебя в Монтане.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <footer>
         <div id="Map" class="FooterMap">
@@ -403,7 +239,6 @@
                     <div class="uk-width-auto@s uk-flex-last uk-flex-first@s">Диско-бар «Montana»</div>
                     <ul class="uk-subnav uk-width-expand@s uk-flex-center uk-visible@s" uk-margin>
                         <li><a href="#Bron" uk-toggle>Забронировать</a></li>
-                        <li><a href="/#Afisha" uk-scroll>Афиша</a></li>
                         <li><a href="/#Akcii" uk-scroll>Акции</a></li>
                         <li><a href="/#Menu" uk-scroll>Меню</a></li>
                         <li><a href="/#Map" uk-scroll>Контакты</a></li>
