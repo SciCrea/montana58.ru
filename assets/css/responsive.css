@@ -1,10 +1,10 @@
 @media (min-width:300px) {
     .HomeHeader {
-        min-height: calc(55vh - 80px);
+        min-height: 50vh;
     }
 
     .HomeHeader .uk-container {
-        padding-top: calc(17vh - 80px);
+        padding-top: calc(15vh);
     }
 
     .HomeHeader h1 {
@@ -38,8 +38,8 @@
 }
 
 @media (min-width:640px) {
-    .HomeHeader .uk-container {
-        padding-top: calc(10vh - 80px);
+    .HomeHeader {
+        min-height: 60vh;
     }
 
     .HomeHeader h1 {
@@ -55,7 +55,7 @@
         height: 140px;
     }
 
-    .FooterMap span{
+    .FooterMap span {
         font-size: 1.75rem;
     }
 
@@ -73,6 +73,10 @@
 }
 
 @media (min-width:960px) {
+    .HomeHeader {
+        min-height: 100vh;
+    }
+
     .HeaderAfisha {
         margin-top: -160px;
     }
@@ -94,7 +98,7 @@
         box-shadow: -40px -30px 0 0 #fdcb01;
     }
 
-    .FooterMap span{
+    .FooterMap span {
         font-size: 2.5rem;
     }
 
@@ -104,12 +108,9 @@
 }
 
 @media (min-width:1200px) {
-    .HomeHeader {
-        min-height: calc(90vh - 80px);
-    }
 
     .HomeHeader .uk-container {
-        padding-top: calc(15vh - 80px);
+        padding-top: calc(20vh);
     }
 
     .HomePhoto img {
@@ -119,12 +120,9 @@
 }
 
 @media (min-width:1600px) {
-    .HomeHeader {
-        min-height: calc(100vh - 80px);
-    }
 
     .HomeHeader .uk-container {
-        padding-top: calc(25vh - 80px);
+        padding-top: calc(25vh);
     }
 
     .HomePhoto img {
@@ -132,11 +130,3 @@
         height: 320px;
     }
 }
-
-@media (max-width:639px) {}
-
-@media (max-width:959px) {}
-
-@media (max-width:1199px) {}
-
-@media (max-width:1599px) {}

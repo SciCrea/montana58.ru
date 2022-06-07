@@ -2,13 +2,16 @@
 .uk-logo:focus,
 .uk-logo:hover,
 .uk-navbar-nav>li>a,
+.uk-close {
+    color: var(--ColorWhite);
+}
+
 .uk-navbar-nav>li:focus>a,
 .uk-navbar-nav>li>a:focus,
 .uk-navbar-nav>li:hover>a,
 .uk-navbar-nav>li.uk-active>a,
-.uk-navbar-toggle,
-.uk-close {
-    color: var(--ColorWhite);
+.uk-navbar-toggle {
+    color: var(--ColorPrimary);
 }
 
 .uk-navbar-nav>li>a {
@@ -16,7 +19,7 @@
 }
 
 .uk-navbar-nav>li.uk-active>a {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--ColorPrimary);
 }
 
 .uk-navbar-nav>li>a {
@@ -43,7 +46,7 @@
 
 .uk-subnav>*> :first-child {
     color: #1F2022;
-    font-size: 1.1rem;
+    font-size: 0.75rem;
 }
 
 .uk-subnav>*>a:focus,
@@ -51,6 +54,14 @@
     color: black;
 }
 
-/* .uk-modal-dialog {
-    width: 700px;
-} */
+.uk-close {
+    color: var(--ColorPrimary);
+}
+
+.uk-close:hover {
+    color: white;
+}
+
+.uk-dotnav>.uk-active>* {
+    background-color: var(--ColorPrimary);
+}

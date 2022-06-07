@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400;700&display=swap');
 
 html {
+    --ColorPrimary: #FA2CCC;
     --BackgroundAccent: #1F2022;
     --ColorWhite: white;
 }
 
 body {
     font-size: 1.25rem;
-    letter-spacing: 2px;
-    word-spacing: 4px;
     background-color: #E6E6E6;
 }
 
@@ -17,45 +16,39 @@ body,
 .uk-navbar-nav>li>a,
 h3,
 h4 {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Nunito', sans-serif;
+}
+
+.uk-logo,
+.HomeHeader h1,
+.FooterMap a,
+h2 {
+    font-family: 'Fredoka One', cursive;
 }
 
 h2,
 h3,
 .uk-logo,
-.uk-navbar-nav>li>a,
-.HomeHeader h1 {
-    font-weight: bold;
-}
-
-.TopNavbarBG {
-    background-image: url(../images/abstraktsiia-uzor-goluboi.jpg);
-}
-
-.TopNavbar {
-    background: rgba(30, 31, 33, 0.5);
-}
-
-.HomeHeader {
-    background-color: var(--BackgroundAccent);
-}
-
-.uk-logo,
 .HomeHeader h1,
-.FooterMap a {
-    font-family: 'Fredoka One', cursive;
+#Bron a {
+    font-weight: 700;
+}
+
+.uk-navbar-nav>li>a,
+.HomeHeader .uk-button-default {
+    font-weight: 900;
 }
 
 .HomeHeader h1 {
-    color: #2E4047;
-    -webkit-text-stroke: 3px #86BEBB;
-    text-shadow: 0px 0px 15px #B8F9F5;
+    color: transparent;
+    -webkit-text-stroke: 3px var(--ColorPrimary);
+    /* text-shadow: 0px 0px 15px #B8F9F5; */
 }
 
 .HomeHeader small {
     font-size: 50%;
-    color: var(--BackgroundAccent);
-    -webkit-text-stroke: 3px rgba(149, 84, 179, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke: 3px rgba(250, 44, 205, 0.5);
     float: right;
 }
 
@@ -63,8 +56,6 @@ h3,
     background-color: rgba(255, 255, 255, 0.75);
     color: var(--BackgroundAccent);
     border: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: bold;
 }
 
 .HomeHeader .uk-button-default:hover,
@@ -188,7 +179,6 @@ h3,
 }
 
 #Bron a {
-    font-weight: bold;
     font-size: 1.5rem;
 }
 
